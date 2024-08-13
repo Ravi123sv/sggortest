@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#canvas-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+canvas {
+    border: 2px solid #333;
+    background-color: #fff;
+}
+
+#info, #algorithm-selector {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#info h2, #algorithm-selector h2 {
+    margin-top: 0;
+}
+
+#algorithm-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#algorithmDropdown {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#context-menu {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+#context-menu button {
+    display: block;
+    margin: 5px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#context-menu button:hover {
+    background-color: #0056b3;
+}

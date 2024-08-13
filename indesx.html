@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="pageTitle">Graph Visualizer</h1>
+    </header>
+    <main>
+        <section id="canvas-container">
+            <canvas id="pathCanvas" width="800" height="600"></canvas>
+        </section>
+        <section id="info">
+            <h2>Explanation</h2>
+            <p id="explanation">Click on the canvas to add nodes. Click on nodes to create edges. Double-click to edit or triple-click to remove.</p>
+        </section>
+        <section id="algorithm-selector">
+            <h2>Select Algorithm</h2>
+            <select id="algorithmDropdown">
+                <option value="dijkstra">Dijkstra's Algorithm</option>
+                <option value="astar">A* Search Algorithm</option>
+                <option value="mst">Minimum Spanning Tree (MST)</option>
+            </select>
+            <button onclick="startAlgorithm()">Run Algorithm</button>
+        </section>
+        <div id="context-menu">
+            <button onclick="editItem()">Edit</button>
+            <button onclick="connectItem()">Connect</button>
+            <button onclick="removeItem()">Remove</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
